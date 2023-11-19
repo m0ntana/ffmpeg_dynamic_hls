@@ -45,10 +45,6 @@ echo -ne "$HEADER_PLAYLIST\n\n"
 
 sortby=$(echo $REQUEST_URI | awk -F '[/.]' {'print $3'})
 
-printenv
-
-echo $REQUEST_URI
-
 case $sortby in
     "t")
 	playlist "find_media_by_time"
