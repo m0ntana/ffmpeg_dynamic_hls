@@ -84,3 +84,11 @@ I have years of experience with `ffmpeg`, so my complete `ffmpeg` options list l
     -
 ```
 You will find it in `segment.sh` file
+
+### nginx configuration
+Just check `vhost.conf` file. It includes all handlers location's handlers.
+
+# Other files
+`config.sh.sample` - example of configuration file. Copy it to `config.sh` to use other scripts.
+`files.sh` - handler to generate an M3U8 playlist of media files you have in your local directory
+`file.sh` - handler to generate an M3U8 HLS file
