@@ -1,0 +1,10 @@
+MEDIA_DIR="/home/m0ntana/Downloads"
+HEADER_PLAYLIST="content-type: application/vnd.apple.mpegurl"
+HEADER_MPEGTS="content-type: video/mp2t"
+SEGMENT_LENGTH=10
+
+#VIDEOW=768
+#VIDEOH=432
+
+VIDEOW=1280
+VIDEOH=720
