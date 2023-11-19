@@ -20,7 +20,7 @@ function read_segment() {
     -t $LENGTH \
     -map [vout] -map [aout] \
     -copyinkf:[vout] \
-    -f mpegts -output_ts_offset $OFFSET \
+    -f mpegts -mpegts_flags +initial_discontinuity+resend_headers -output_ts_offset $OFFSET \
     -
 }
 

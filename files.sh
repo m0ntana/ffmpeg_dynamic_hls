@@ -26,7 +26,7 @@ function playlist_item() {
     encoded=$2
     
     echo "#EXTINF:0, ${short}"
-    echo "/f/${encoded}/p.m3u8"
+    echo "${REQUEST_SCHEME}://${HTTP_HOST}/f/${encoded}/p.m3u8"
 }
 
 function playlist() {
@@ -45,6 +45,10 @@ echo -ne "$HEADER_PLAYLIST\n\n"
 
 sortby=$(echo $REQUEST_URI | awk -F '[/.]' {'print $3'})
 
+printenv
+
+echo $REQUEST_URI
+
 case $sortby in
     "t")
 	playlist "find_media_by_time"
@@ -53,6 +57,7 @@ case $sortby in
 	playlist "find_media_by_name"
 	;;
     "*")
+	echo $REQUEST_URI
 	exit 0
 	;;
 esac

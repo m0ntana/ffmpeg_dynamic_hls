@@ -1,4 +1,4 @@
-MEDIA_DIR="/home/m0ntana/Downloads"
+MEDIA_DIR="/your/directory/with/media"
 HEADER_PLAYLIST="content-type: application/vnd.apple.mpegurl"
 HEADER_MPEGTS="content-type: video/mp2t"
 SEGMENT_LENGTH=10
